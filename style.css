@@ -5,9 +5,9 @@
   --surface:#343434;
   --text:#DFBC75;
   --muted:#5c6a76;
-  --brand:#DFBC75;      /* marka rengi */
-  --brand-600:#8F7D56;  /* hover */
-  --ring:#323333;       /* focus */
+  --brand:#DFBC75;      
+  --brand-600:#8F7D56;  
+  --ring:#323333;       
   --ok:#1b873f;
   --danger:#b3261e;
   --shadow:0 12px 28px rgba(0,0,0,.08);
@@ -44,11 +44,11 @@ a:hover{color:var(--brand-600)}
 .ticks li{padding-left:1.4rem;position:relative;margin:.25rem 0}
 .ticks li::before{content:"✔";position:absolute;left:.2rem;color:var(--brand)}
 
-/* ============ Skip link ============ */
+
 .skip{position:absolute;left:-9999px;top:auto}
 .skip:focus{left:12px;top:12px;background:#000;color:#fff;padding:.6rem .8rem;border-radius:8px;z-index:9999}
 
-/* ============ Header ============ */
+
 .site-header{position:sticky;top:0;background:#323333;border-bottom:1px solid #e6eaee;z-index:50}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0}
 .brand{display:flex;gap:.7rem;align-items:center}
@@ -61,7 +61,7 @@ a:hover{color:var(--brand-600)}
 .hamburger{display:none;font-size:1.3rem;background:#fff;border:1px solid #dbe6ea;border-radius:10px;padding:.45rem .6rem}
 .nav-cta{display:flex;gap:.6rem;align-items:center}
 
-/* ============ Hero ============ */
+
 .hero{padding:4.5rem 0}
 .hero-grid{display:grid;gap:2rem;grid-template-columns:1.2fr .8fr;align-items:center}
 .hero h1{font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.2;margin:.2rem 0 .7rem}
@@ -77,22 +77,21 @@ a:hover{color:var(--brand-600)}
     justify-content: space-around;
 }
 
-/* ============ Services ============ */
+
 .service img{width:100%;height:675px;object-fit:cover}
 .service h3{margin:.3rem 0 .4rem;font-size:1.12rem; text-align: center;}
 .service p{margin:0 0 .7rem; text-align: center;}
 
-/* ============ Doctor ============ */
+
 .doctor{display:grid;grid-template-columns:200px 1fr;gap:1.2rem;align-items:center}
 .doctor img{width:200px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}
 
-/* ============ Stats ============ */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .stat{background:var(--surface);border-radius:14px;padding:1.1rem;text-align:center;box-shadow:var(--shadow)}
 .stat strong{display:block;font-size:1.6rem}
 .stat span{color:#DFBC75}
 
-/* ============ Slider ============ */
+
 .slider{position:relative}
 .slides{display:flex;gap:1rem;overflow:hidden;scroll-behavior:smooth}
 .t-card{min-width:100%;background:var(--surface);border-radius:16px;padding:1.2rem;box-shadow:var(--shadow)}
@@ -104,13 +103,13 @@ a:hover{color:var(--brand-600)}
 .dots button{width:8px;height:8px;border-radius:999px;border:1px solid #aacdc8;background:#fff}
 .dots button.active{background:var(--brand)}
 
-/* ============ FAQ ============ */
+
 .faq{display:grid;gap:.6rem}
 .faq details{background:var(--surface);border-radius:12px;padding:.8rem 1rem;box-shadow:var(--shadow)}
 .faq summary{cursor:pointer;font-weight:600}
 .faq p{margin:.6rem 0 0;color:rgb(225, 225, 225)}
 
-/* ============ Form ============ */
+
 .form-wrap{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:1.2rem}
 .notice{border:1px solid ;border-radius:12px;padding:.7rem .9rem;margin-bottom:.9rem}
 .alert{border-radius:10px;padding:.6rem .8rem;margin-bottom:.7rem}
@@ -123,21 +122,21 @@ input,select,textarea{padding:.8rem;border:1px solid #d8e0e6;border-radius:10px;
 input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-color:var(--ring)}
 .check{display:flex;gap:.55rem;align-items:center}
 
-/* ============ Contact ============ */
+
 .contact{display:grid;gap:1rem;grid-template-columns:1.1fr .9fr}
 
-/* ============ Footer ============ */
+
 .site-footer{margin-top:3rem;background:#0e1a22;color:#d5e2ea}
 .site-footer .cols{display:grid;gap:1rem;grid-template-columns:2fr 1fr 1fr 1fr;padding:2rem 0}
 .site-footer a{color:#d5e2ea}
 .copy{padding:1rem 0;border-top:1px solid #274454;color:#9fb5c3}
 
-/* ============ Floating buttons ============ */
+
 .wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:999px;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 25px rgba(37,211,102,.45);color:#fff;font-size:22px}
 .to-top{position:fixed;right:18px;bottom:86px;width:44px;height:44px;border-radius:999px;border:1px solid #cfe1df;background:#fff;box-shadow:var(--shadow);display:none}
 .to-top.show{display:grid;place-items:center}
 
-/* ============ Responsive ============ */
+
 @media (max-width: 1020px){
   .grid-3{grid-template-columns:1fr 1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -180,12 +179,12 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-col
 
 .hours div {
   display: flex;
-  justify-content: space-between;  /* gün sola, saat sağa */
-  max-width: 300px;                /* hizalama için genişlik sınırı */
+  justify-content: space-between;  
+  max-width: 300px;               
   margin-bottom: 0.3rem;
 }
 .hours span:first-child {
-  font-weight: 600;                /* günler kalın */
+  font-weight: 600;                
 }
 
 .logo {
