@@ -155,21 +155,23 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-col
     margin-top: 20px;
 }
 
-@media (max-width:400px){
-  .testimonials {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   align-items: start}
-  }
 .testimonials {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     align-items: start;
 }
+
+@media (max-width:800px){
+  .testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center}
+  }
+
 
 .testimonial {
     background: #333333;
