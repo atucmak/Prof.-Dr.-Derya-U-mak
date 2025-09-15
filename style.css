@@ -163,15 +163,15 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-col
     align-items: start;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width:800px){
   .testimonials {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center}
   }
-}
+
 
 
 .testimonial {
@@ -179,7 +179,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-col
     color: #DFBC75;
     width: 300px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 30px;
     margin-bottom: 20px
 }
 
