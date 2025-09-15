@@ -163,14 +163,15 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-col
     align-items: start;
 }
 
-@media (max-width:800px){
+@media screen and (max-width: 768px) {
   .testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
   }
+}
 
 
 .testimonial {
